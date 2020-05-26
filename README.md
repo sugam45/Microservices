@@ -24,14 +24,15 @@ npm install
 
 **4.**  The app gets up and running on port 3000 with ```npm start```.
 
-**5.**  **Important** Create a ```.env``` file and set ```jwtSecret``` to any secret phrase you want.
+**5.**  **Important** Edit the ```env``` variables in _nodemon.json_ file and set ```jwtSecret``` to any secret phrase you want.
 
-**4.** Make sure to also add your Mongo Atlas Admin Username to a nodemon.json file (which you have to create).
+**4.** Make sure to also add your Mongo Atlas Admin Username to a _nodemon.json_ file and change the ```moongoose.connect``` address in _app.js:11_ to your needs.
 
 ```
 {
     "env": {
-        "MONGO_ATLAS_PW": "YOUR_MONGO_USER_PW"
+        "MONGO_ATLAS_PW": "ATLAS_PW",
+        "JWT_KEY": "KEY"
     }
 }
 ```
